@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*container của tailwind ko có margin trái phải auto*/
+/* Added */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
