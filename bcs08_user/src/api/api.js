@@ -4,7 +4,7 @@ import { BASE_URL, configHeaders } from "./config"
 // makes an API call to fetch a list of movies
 export let getMovieList =()=>{
     return axios({
-        url: `${BASE_URL}/QuanLyPhim/LayDanhSachPhim?maNhom=GP01`,
+        url: `${BASE_URL}/QuanLyPhim/LayDanhSachPhim?maNhom=GP09`,
         method: "GET",
         headers: configHeaders(),
     });
@@ -20,7 +20,7 @@ export let getMovieDetail =(id)=>{
 
 export let getMovieByTheatre=()=>{
     return axios({
-        url: `${BASE_URL}/QuanLyRap/LayThongTinLichChieuHeThongRap?maNhom=GP01`,
+        url: `${BASE_URL}/QuanLyRap/LayThongTinLichChieuHeThongRap?maNhom=GP09`,
         method: "GET",
         headers: configHeaders(),
     });
