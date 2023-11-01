@@ -12,7 +12,7 @@ export default function Header() {
     // useSelector takes a single function ("selector function".)
     // This function receives the entire Redux store STATE as its only argument and returns the part of the state that the component needs.
     let {info} = useSelector ((state)=>{
-        return state.userReducer;
+        return state.userReducer; 
     });
 
     let handleLogin=()=>{window.location.href="/login"};

@@ -1,20 +1,18 @@
 import { userLocalStorage } from "../../api/localService";
 import { SET_INFO } from "../constant/user";
-
-//rxreducer
-// initialState chạy khi load trang
+// rxreducer
 const initialState = {
     info: userLocalStorage.get(),
 }
 
-let userReducer=(state=initialState,{ type, payload }) => {
-    switch (type) {
-        case SET_INFO:
-            state.info=payload;
-            return { ...state };
-        default:
-            return state
-    }
-}
+export let userReducer = (state = initialState, { type, payload }) => {
+  switch (type) {
 
-export default userReducer;
+    case SET_INFO:
+        state.info= payload;
+        return { ...state}
+
+    default:
+        return state
+  }
+}

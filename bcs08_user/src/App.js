@@ -6,6 +6,9 @@ import Home from './page/Home/Home';
 import Login from './page/Login/Login';
 import Layout from './template/Layout';
 import MovieDetail from './page/Home/MovieDetail/MovieDetail';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function App() {
   return (

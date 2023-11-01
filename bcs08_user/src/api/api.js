@@ -32,3 +32,5 @@ export let getDataSlider=()=>{
         headers: configHeaders(),
     });
 }
+
+

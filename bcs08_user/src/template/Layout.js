@@ -8,7 +8,7 @@ export default function Layout({children}) {
         {/* shows a Header component, underneath
         it renders whatever is passed in as children */}
         <Header/>
-        {children}
+          {children}
         <Footer/>
     </div>
   );
